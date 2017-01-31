@@ -15,19 +15,28 @@ public class HourlyEmployee extends Employee
     
     public HourlyEmployee(String name, int age, int contact, String gender, int startDate, String positionTitle, int hourlyRate)
     {
-        super(name, age, contact, gender, startDate, positionTitle, hourlyRate):
+        super(name, age, contact, gender, startDate, positionTitle):
         this.hourlyRate = hourlyRate;
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    public void setHourlyRate(int rate)
     {
-        // put your code here
-        return x + y;
+        hourlyRate = rate;
+    }
+    
+    public int getHourlyRate()
+    {
+        return rate;
+    }
+    
+    public double calcPay(int hours)
+    {
+        return hours * hourlyRate;
+    }
+    
+    public String info()
+    {
+        String inf = super.info();
+        return(inf + "\tHourly Rate: " + hourlyRate);
     }
 }
