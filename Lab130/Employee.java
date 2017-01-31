@@ -47,8 +47,4 @@ public class Employee extends Person
         return ("Person: Employee\tName: " + getName() + "\tAge: " + getAge() + "\tContact: " + getContact()
                  + "\tGender: " + getGender() + "\tStart Year: " + startDate + "\tPosition: " + positionTitle);
     }
-    
-    public int yearsServed()
-    {
-    }
 }
