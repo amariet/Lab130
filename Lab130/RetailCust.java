@@ -1,33 +1,37 @@
-
 /**
- * Write a description of class RetailCust here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Amanda Torres
+ * Lab 130
+ * 31 January 2017
  */
-public class RetailCust
+public class RetailCust extends Customer
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    private int markupRate;
 
-    /**
-     * Constructor for objects of class RetailCust
-     */
     public RetailCust()
     {
-        // initialise instance variables
-        x = 0;
+        super();
+        markupRate = 0;
+    }
+    
+    public RetailCust(String name, int age, int contact, String gender, String region, int markupRate)
+    {
+        super(name, age, contact, gender, region);
+        this.markupRate = markupRate;
+    }
+    
+    public void setMarkupRate(int m)
+    {
+        markupRate = rate;
+    }
+    
+    public int getMarkupRate()
+    {
+        return markupRate;
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
     public int sampleMethod(int y)
     {
-        // put your code here
-        return x + y;
+        String inf = super.info();
+        return(inf + "\tMarkup Rate: " + markupRate);
     }
 }

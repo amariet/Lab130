@@ -3,6 +3,7 @@
  * Lab 130
  * 30 January 2017
  */
+import java.util.Calendar;
 public class Employee extends Person
 {
     private String startDate;
@@ -10,8 +11,9 @@ public class Employee extends Person
 
     public Employee()
     {
-        startDate = "";
-        positionTitle = "";
+        super();
+        startDate = Calendar.getInsrance().getCalendar(Calendar.YEAR);
+        positionTitle = "Employee";
     }
     
     public Employee(String date, String title)
@@ -42,7 +44,7 @@ public class Employee extends Person
 
     public String info()
     {
-        
+        return 
     }
     
     public int yearsServed()

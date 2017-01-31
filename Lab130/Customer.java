@@ -3,24 +3,34 @@
  * Lab 130
  * 30 January 2017
  */
-public class Customer
+public class Customer extends Person
 {
     private String region;
 
     public Customer()
+    { 
+        super();
+        customerRegion = "";
+    }
+    
+    public Customer(String name, int age, int contact, String gender, String region)
     {
-       
+        super(name, age, contact, gender);
+        this.region = region;
+    }
+    
+    public void setRegion(String r)
+    {
+        region = r;
+    }
+    
+    public String getRegion()
+    {
+        return region;
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    public String info()
     {
-        // put your code here
-        return x + y;
+        return("Person : Customer\tName: " + getName() + "\tAge: " + getAge() + "\tContact: " + getContact() + "\tGender: " + getGender() + "\tRegion: " + region);
     }
 }

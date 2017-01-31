@@ -1,33 +1,50 @@
-
 /**
- * Write a description of class WholesaleCust here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Amanda Torres
+ * Lab 130
+ * 31 January 2017
  */
-public class WholesaleCust
+public class WholesaleCust extends Customer
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    private int markupRate;
+    private String company;
 
-    /**
-     * Constructor for objects of class WholesaleCust
-     */
     public WholesaleCust()
     {
-        // initialise instance variables
-        x = 0;
+        super();
+        markupRate = 0;
+        company = "";
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    public WholesaleCust(String name, int age, int contact, String  gender, String region, int markupRate, String company)
     {
-        // put your code here
-        return x + y;
+        super(name, age, contact, gender, region);
+        this.markupRate = markupRate;
+        this.company = company;
+    }
+    
+    public void setMarkupRate(int m)
+    {
+        markupRate = m;
+    }
+    
+    public int getMarkupRate()
+    {
+        return markupRate;
+    }
+    
+    public void setCompany(String c)
+    {
+        company = c;
+    }
+    
+    public String getCompany()
+    {
+        return company;
+    }
+    
+    public String info()
+    {
+        String inf = super.info();
+        return(inf + "\tMarkup Rate: " + markupRate + "\tCompany: " + company);
     }
 }

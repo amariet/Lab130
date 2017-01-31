@@ -1,22 +1,22 @@
-
 /**
- * Write a description of class HourlyEmployee here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Amanda Torres
+ * Lab 130
+ * 30 January 2017
  */
-public class HourlyEmployee
+public class HourlyEmployee extends Employee
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    private int hourlyRate;
 
-    /**
-     * Constructor for objects of class HourlyEmployee
-     */
     public HourlyEmployee()
     {
-        // initialise instance variables
-        x = 0;
+        super();
+        hourlyRate = 0;
+    }
+    
+    public HourlyEmployee(String name, int age, int contact, String gender, int startDate, String positionTitle, int hourlyRate)
+    {
+        super(name, age, contact, gender, startDate, positionTitle, hourlyRate):
+        this.hourlyRate = hourlyRate;
     }
 
     /**

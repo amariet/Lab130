@@ -5,67 +5,67 @@
  */
 public abstract class Person
 {
-    private String personName;
-    private int personAge;
-    private int personContact;
-    private String personGender;
+    private String name;
+    private int age;
+    private int contact;
+    private String gender;
 
     public Person()
     {
-        personName = "";
-        personAge = 0;
-        personContact = 0;
-        personGender = "";
+        name = "";
+        age = 0;  
+        contact = 0;
+        gender = "";
     }
-    
+
     public Person(String name, int age, int contact, String gender)
     {
-        personName = name;
-        personAge = age;
-        personContact = contact;
-        personGender = gender;
+        this.name = name;
+        this.age = age;
+        this.contact = contact;
+        this.gender = gender;
     }
-    
-    public void setName(String name)
+
+    public void setName(String n)
     {
-        personName = name;
+        name = n;
     }
-    
+
     public String getName()
     {
-        return personName;
+        return name;
     }
-    
-    public void setAge(int age)
+
+    public void setAge(int a)
     {
-        personAge = age;
+        age = a;
     }
-    
+
     public int getAge()
     {
-        return personAge;
+        return age;
     }
-    
-    public void setContact(int contact)
+
+    public void setContact(int c)
     {
-        personContact = contact;
+        contact = c;
     }
-    
+
     public int getContact()
     {
-        return personContact;
+        return contact;
     }
-    
-    public void setGender(String gender)
+
+    public void setGender(String g)
     {
-        personGender = gender;
+        gender = g;
     }
-    
+
     public String getGender()
     {
-        return personGender;
+        return gender;
     }
 
     public abstract void info();
-    
+
 }
