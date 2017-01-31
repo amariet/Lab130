@@ -1,14 +1,12 @@
 
 /**
- * Write a description of class Salaried here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
+ * Amanda Torres
+ * Lab 130
+ * 31 January 2017
  */
 public class Salaried
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    private double annualSalary;
 
     /**
      * Constructor for objects of class Salaried
