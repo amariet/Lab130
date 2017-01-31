@@ -16,8 +16,9 @@ public class Employee extends Person
         positionTitle = "Employee";
     }
     
-    public Employee(String name, int age, int contact, String gender, int startDate, String postitionTitle)
+    public Employee(String name, int age, String contact, String gender, int startDate, String postitionTitle)
     {
+        super(name, age, contact, gender);
         this.startDate = startDate;
         this.positionTitle = positionTitle;
     }
