@@ -15,7 +15,7 @@ public class WholesaleCust extends Customer
         company = "";
     }
 
-    public WholesaleCust(String name, int age, int contact, String  gender, String region, int markupRate, String company)
+    public WholesaleCust(String name, int age, String contact, String  gender, String region, int markupRate, String company)
     {
         super(name, age, contact, gender, region);
         this.markupRate = markupRate;
