@@ -13,7 +13,7 @@ public class HourlyEmployee extends Employee
         hourlyRate = 0;
     }
     
-    public HourlyEmployee(String name, int age, String contact, String gender, int startDate, String positionTitle, double hourlyRate)
+    public HourlyEmployee(String name, int age, String contact, String gender, String startDate, String positionTitle, double hourlyRate)
     {
         super(name, age, contact, gender, startDate, positionTitle):
         this.hourlyRate = hourlyRate;
