@@ -7,18 +7,18 @@ public abstract class Person
 {
     private String name;
     private int age;
-    private int contact;
+    private String contact;
     private String gender;
 
     public Person()
     {
         name = "";
         age = 0;  
-        contact = 0;
+        contact = "";
         gender = "";
     }
 
-    public Person(String name, int age, int contact, String gender)
+    public Person(String name, int age, String contact, String gender)
     {
         this.name = name;
         this.age = age;
@@ -46,12 +46,12 @@ public abstract class Person
         return age;
     }
 
-    public void setContact(int c)
+    public void setContact(String c)
     {
         contact = c;
     }
 
-    public int getContact()
+    public String getContact()
     {
         return contact;
     }
