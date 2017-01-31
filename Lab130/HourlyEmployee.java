@@ -5,7 +5,7 @@
  */
 public class HourlyEmployee extends Employee
 {
-    private int hourlyRate;
+    private double hourlyRate;
 
     public HourlyEmployee()
     {
@@ -13,18 +13,18 @@ public class HourlyEmployee extends Employee
         hourlyRate = 0;
     }
     
-    public HourlyEmployee(String name, int age, int contact, String gender, int startDate, String positionTitle, int hourlyRate)
+    public HourlyEmployee(String name, int age, int contact, String gender, int startDate, String positionTitle, double hourlyRate)
     {
         super(name, age, contact, gender, startDate, positionTitle):
         this.hourlyRate = hourlyRate;
     }
 
-    public void setHourlyRate(int rate)
+    public void setHourlyRate(double rate)
     {
         hourlyRate = rate;
     }
     
-    public int getHourlyRate()
+    public double getHourlyRate()
     {
         return rate;
     }
