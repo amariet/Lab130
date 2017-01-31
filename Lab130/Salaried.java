@@ -8,24 +8,36 @@ public class Salaried
 {
     private double annualSalary;
 
-    /**
-     * Constructor for objects of class Salaried
-     */
     public Salaried()
     {
-        // initialise instance variables
-        x = 0;
+        super();
+        annualSalary = 0;
+    }
+    
+    public Salaried(String name, int age, int contact, String gender, int startDate, String positionTitle)
+    {
+        super(name, age, contact, gender, startDate, poitionTitle);
+        this.annualSalary = annualSalary;
+    }
+    
+    public void setAnnualSalary(double annual)
+    {
+        annualSalary = annual;
+    }
+    
+    public double getAnnualSalary()
+    {
+        return annualSalary;
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    public double calcPay(double payPeriod)
     {
-        // put your code here
-        return x + y;
+        return annualSalary * (payPeriod / 245.0);
+    }
+    
+    public String info()
+    {
+        String inf = super.info();
+        return(inf + "\tAnnual Salary: " + annualSalary);
     }
 }
