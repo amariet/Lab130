@@ -4,7 +4,7 @@
  * Lab 130
  * 31 January 2017
  */
-public class Salaried
+public class Salaried extends Employee
 {
     private double annualSalary;
 
