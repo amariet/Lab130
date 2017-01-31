@@ -6,7 +6,7 @@
 import java.util.Calendar;
 public class Employee extends Person
 {
-    private String startDate;
+    private int startDate;
     private String positionTitle;
 
     public Employee()
@@ -16,10 +16,10 @@ public class Employee extends Person
         positionTitle = "Employee";
     }
     
-    public Employee(String date, String title)
+    public Employee(String name, int age, int contact, String gender, int startDate, String postitionTitle)
     {
-        startDate = date;
-        positionTitle = title;
+        this.startDate = startDate;
+        this.positionTitle = positionTitle;
     }
     
     public void setStartDate(String date)
@@ -44,7 +44,8 @@ public class Employee extends Person
 
     public String info()
     {
-        return 
+        return ("Person: Employee\tName: " + getName() + "\tAge: " + getAge() + "\tContact: " + getContact()
+                 + "\tGender: " + getGender() + "\tStart Year: " + startDate + "\tPosition: " + positionTitle);
     }
     
     public int yearsServed()
