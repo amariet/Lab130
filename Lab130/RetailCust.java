@@ -13,7 +13,7 @@ public class RetailCust extends Customer
         markupRate = 0;
     }
     
-    public RetailCust(String name, int age, int contact, String gender, String region, int markupRate)
+    public RetailCust(String name, int age, String contact, String gender, String region, int markupRate)
     {
         super(name, age, contact, gender, region);
         this.markupRate = markupRate;
