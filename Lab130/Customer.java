@@ -13,7 +13,7 @@ public class Customer extends Person
         customerRegion = "";
     }
     
-    public Customer(String name, int age, int contact, String gender, String region)
+    public Customer(String name, int age, String contact, String gender, String region)
     {
         super(name, age, contact, gender);
         this.region = region;
