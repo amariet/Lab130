@@ -14,7 +14,7 @@ public class Salaried extends Employee
         annualSalary = 0;
     }
     
-    public Salaried(String name, int age, int contact, String gender, int startDate, String positionTitle)
+    public Salaried(String name, int age, String contact, String gender, int startDate, String positionTitle)
     {
         super(name, age, contact, gender, startDate, poitionTitle);
         this.annualSalary = annualSalary;
